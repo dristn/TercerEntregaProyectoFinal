@@ -1,0 +1,21 @@
+@media screen and (max-width: 991px) {
+  .boton_nav {
+    color: #ccc;
+    margin: 10px;
+  }
+  /*Nosotros*/
+  .mapa {
+    width: 100%;
+    padding-left: 50px;
+  }
+  /*cotizador*/
+  .padre_cotizador {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    min-width: 150px;
+  }
+}

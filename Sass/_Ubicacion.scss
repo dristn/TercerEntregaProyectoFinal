@@ -1,0 +1,25 @@
+/*ubicacion*/
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  h3 {
+  @include titulo;
+}
+}
+
+
+.ubicacion_select {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: $color1;
+}
+
+.mapa {
+  width: 100%;
+  padding-left: 230px;
+}

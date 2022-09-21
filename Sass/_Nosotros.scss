@@ -1,0 +1,39 @@
+/*nosotros*/
+
+.grid_padre {
+  display: grid;
+  grid-template-columns: 4/ 1fr;
+  grid-template-areas:
+    "header header header header"
+    "nosotros nosotros nosotros nosotros"
+    "nosotros nosotros nosotros nosotros"
+    "nosotros nosotros nosotros nosotros"
+    "footer footer footer footer";
+}
+.nosotros {
+  grid-area: nosotros;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  h3 {
+   @include titulo;
+    
+  }
+  p {
+    text-align: map-get($estilosTexto, center);
+    font-size: map-get($estilosTexto, 16px);
+    font-weight: map-get($estilosTexto, 800);
+    color: $color1;
+    margin-top: 10px;
+  }
+  .img_nosotros {
+    width: 80%;
+  }
+}
+
+iframe {
+  width: 80%;
+  margin: 20px;
+}

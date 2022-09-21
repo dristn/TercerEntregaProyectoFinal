@@ -1,0 +1,47 @@
+/*productos*/
+.container_card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 70px;
+
+  h4 {
+    color: $color2;
+  }
+}
+
+.card {
+  p {
+    text-align: map-get($estilosTexto, center);
+    font-size: map-get($estilosTexto, 16px);
+    font-weight: map-get($estilosTexto, 800);
+    margin: 10px;
+    color: $color1;
+    padding: 5px;
+  }
+}
+
+.img_vida {
+  width: 530px;
+  height: 200px;
+}
+.img_auto {
+  width: 300px;
+  height: 200px;
+}
+.img_hogar {
+  width: 300px;
+  height: 200px;
+}
+.opinion_prod {
+  text-align: center;
+  color: $color1;
+}
+
+.container_opinion {
+  margin: auto;
+  width: 1200px;
+}
+

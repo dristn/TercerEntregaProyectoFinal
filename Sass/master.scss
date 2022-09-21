@@ -1,0 +1,115 @@
+@import "variables";
+@import "Navegacion";
+@import "Contacto";
+@import "Cotizador";
+@import "Nosotros";
+@import "Productos";
+@import "Ubicacion";
+@import "Footer";
+@import "media";
+
+/*Css Reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Red Hat Mono", monospace;
+  background-color: white;
+}
+
+h1 {
+  font-size: 30px;
+  color: #001b48;
+}
+@mixin titulo {
+   font {
+    weight: 900;
+    size: 30px;
+  }
+  color: #436280;
+  text-align: center;
+  margin: 20px;
+ 
+}
+  h2 {
+  @include titulo ;
+}
+
+
+/* index**/
+.grid_contenedor {
+  display: grid;
+  grid-template-columns: 4/ 1fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "articulo1 articulo1 articulo1 articulo2"
+    "articulo1 articulo1 articulo1 articulo2"
+    "articulo3 articulo3 articulo3 articulo2"
+    "footer footer footer footer";
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #436280;
+  }
+}
+
+.grid_1 {
+  grid-area: articulo1;
+  padding-top: 5px;
+
+  text-align: center;
+}
+
+.grid_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: articulo2;
+  width: 100%;
+  background-color: #0d2033;
+  p {
+     text-align: map-get($estilosTexto, center);
+    font-size: map-get($estilosTexto, 16px);
+    font-weight: map-get($estilosTexto, 800);
+    padding-top: 20px;
+  }
+}
+
+.grid_3 {
+  grid-area: articulo3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.img_grid {
+  width: 80%;
+  margin: 30px;
+}
+.img_index {
+  padding {
+    inset-block-end: 20px;
+    top: 20px;
+  }
+  width: 60%;
+  height: 60%px;
+}
+
+.img_index2 {
+  width: 80%;
+  padding {
+    inset-block-end: 20px;
+    left: 200px;
+  }
+}
